@@ -23,7 +23,7 @@ SERVER
 
 Code explained
 ================================
-Set the "Content-Type" header to "text/event-stream"
-Specify that the page should not cache
-Output the data to send (Always start with "data: ")
-Flush the output data back to the web page
+ - Set the "Content-Type" header to "text/event-stream"
+ - Specify that the page should not cache
+ - Output the data to send (Always start with "data: ")
+ - Flush the output data back to the web page
