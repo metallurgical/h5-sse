@@ -3,10 +3,11 @@ A server-sent event is when a web page automatically gets updates from a server.
 
 CLIENT
 =======================
-var source = new EventSource("demo_sse.php");
-source.onmessage = function(event) {
+
+    var source = new EventSource("demo_sse.php");
+    source.onmessage = function(event) {
     document.getElementById("result").innerHTML += event.data + "<br>";
-};
+    };
 
 SERVER
 ==============================
