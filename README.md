@@ -27,3 +27,7 @@ Code explained
  - Specify that the page should not cache
  - Output the data to send (Always start with "data: ")
  - Flush the output data back to the web page
+
+Source
+===============================
+http://www.techumber.com/2012/11/Simple-Chat-Engine-Using-HTML5-Server-Sent-Events-And-PHP.html
