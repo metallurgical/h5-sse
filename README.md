@@ -36,6 +36,7 @@ This example are used PHP and MYSQL and can be found on "From-db" folder. Consis
  
 Index.html
 
+``` html
     <!DOCTYPE html>  
     <html>
     <head>
@@ -80,3 +81,4 @@ Index.html
     </script>
     </body>
     </html>
+```
