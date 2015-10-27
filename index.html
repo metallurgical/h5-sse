@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container">
+<div class="chat">
+ <div id="chatZone" name="chatZone"></div>
+  <form onsubmit="chat.sendMsg(); return false;">
+   <label for="msg" style="float:left">Message:</label>
+   <input type="text" id="msg" name="msg" autofocus="true" placeholder="Type Your Meassage Here" />
+   <input type="submit" />
+  </form>
+ </div>
+</div>
+<script type="text/javascript" src="chat.js"></script>
+</body>
+</html>
