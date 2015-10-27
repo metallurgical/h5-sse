@@ -28,6 +28,55 @@ Code explained
  - Output the data to send (Always start with "data: ")
  - Flush the output data back to the web page
 
-Source
-===============================
-http://www.techumber.com/2012/11/Simple-Chat-Engine-Using-HTML5-Server-Sent-Events-And-PHP.html
+Example
+=============================
+This example are used PHP and MYSQL and can be found on "From-db" folder. Consists of :
+ - index.html
+ - hello.php
+ 
+Index.html
+
+    <!DOCTYPE html>  
+    <html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Server Sent Event</title>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.js"></script>
+    </head>
+    <body>
+        <div id="result"></div>
+        <script type="text/javascript">
+
+        ( function ( $ ) {
+
+            $( function () {
+
+              // check for browser support
+              // for even source features
+              if ( typeof( EventSource ) !== "undefined" ) {
+                // create event source 
+                var src = new EventSource("hello.php");
+                // trigger message handler
+                // if new data received
+                src.addEventListener( 'message', function ( e ) {
+                  // anyway append into page
+                  // for user view
+                  $( '#result' ).append( e.data + '<br/>' );
+                });
+        
+              }
+              else {
+
+                alert( 'Sooorry, your browser did\'t support EventSource Features, Please use Firefox or Chrome' );
+                // if did't support 
+                // create an AJAX request 
+                // to replace EventSource
+
+              }
+            });
+
+        })( jQuery )
+  
+    </script>
+    </body>
+    </html>
