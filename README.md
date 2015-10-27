@@ -33,6 +33,8 @@ Example
 This example are used PHP and MYSQL and can be found on "From-db" folder. Consists of :
  - index.html
  - hello.php
+
+To test, copy both index.html and hello.php into webserver folder and run index.html in your web page(or download this repo). Open database(in example were used Xampp - phpmyadmin), and insert data into table user and save. At the same time, see the changes inside web page displaying newly inserted data from database. Have fun!!
  
 **Index.html**
 
