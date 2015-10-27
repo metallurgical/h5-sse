@@ -34,7 +34,7 @@ This example are used PHP and MYSQL and can be found on "From-db" folder. Consis
  - index.html
  - hello.php
  
-# Index.html
+**Index.html**
 
 ``` html
     <!DOCTYPE html>  
@@ -83,7 +83,7 @@ This example are used PHP and MYSQL and can be found on "From-db" folder. Consis
     </html>
 ```
 
-# hello.php
+**hello.php**
 
 ```php
     <?php
