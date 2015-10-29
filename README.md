@@ -190,3 +190,8 @@ To test, copy both **index.html** and **hello.php** into webserver folder and ru
     checkExistingData();
     
     ?>
+```  
+
+### Credit to [Remy](https://github.com/remy)
+ - Cross Browser support
+ - [EventSource.js](https://github.com/remy/polyfills/blob/master/EventSource.js)
