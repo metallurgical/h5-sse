@@ -53,11 +53,12 @@ To test, copy both **index.html** and **hello.php** into webserver folder and ru
     <body>
         <div id="result"></div>
         <script type="text/javascript">
-
+        // IIFE
+        // Immedietly invoked function expression scope
+        // passing jQuery
         ( function ( $ ) {
-
+            // When document ready
             $( function () {
-
               // check for browser support
               // for even source features
               if ( typeof( EventSource ) !== "undefined" ) {
