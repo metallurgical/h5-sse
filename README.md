@@ -45,6 +45,10 @@ To test, copy both **index.html** and **hello.php** into webserver folder and ru
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>Server Sent Event</title>
         <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.js"></script>
+        <!-- include this = cross browser support 
+             Any browser who did't support for event source
+             we make an ajax request as an alternative -->
+        <script type="text/javascript" src="eventSource.js"></script>
     </head>
     <body>
         <div id="result"></div>
