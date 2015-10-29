@@ -4,6 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>Server Sent Event</title>
   <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.js"></script>
+  <script type="text/javascript" src="eventSource.js"></script>
 </head>
 <body>
   <div id="result"></div>
@@ -13,13 +14,22 @@
 
     $( function () {
 
-      if ( EventSource ) {
+      // check for browser support
+      // for even source features
+      if ( typeof( EventSource ) !== "undefined" ) {
+        // create event source 
         var src = new EventSource("hello.php");
+        // trigger message handler
+        // if new data received
         src.addEventListener( 'message', function ( e ) {
+          // anyway append into page
+          // for user view
           $( '#result' ).append( e.data + '<br/>' );
         });
+
       }
       else {
+
         alert( 'Sooorry, your browser did\'t support EventSource Features, Please use Firefox or Chrome' );
         // if did't support 
         // create an AJAX request 
